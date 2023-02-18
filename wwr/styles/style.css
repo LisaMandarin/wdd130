@@ -117,7 +117,7 @@ body {
     width: 80px;
     padding-top: 10px;
 }
-.river-card, .camping-card, .rapids-card {
+.rivers-card, .camping-card, .rapids-card {
     margin: 200px 0;
 }
 .book:hover {
