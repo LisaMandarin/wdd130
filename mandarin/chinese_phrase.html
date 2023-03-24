@@ -20,24 +20,29 @@
             </nav>
         </div>
     </header>
-    <main class="content">
-        <h1>Useful Chinese Phrases</h1>
-        <div>
+    <main class="content" id="phrase-main-box">
+        <div id="phrase-title-box">
+            <h1>Useful Chinese Phrases</h1>
+        </div>
+        <div id="phrase-img-box">
             <img id="phrase-img" src="images/useful_phrases.png" alt="people holding signs of Chinese phrases">
-            <div>
-                <p class="description"><img id="teacher-img" src="images/teacher.png" alt="teacher">In Chinese culture, people do not tend to hug or kiss each other when meeting people for the first time.
-                      Instead, people wave, nod or shake hands.  When greeting people, you can also say the following phrases.</p>
-            </div>
-            
-            <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'nihao')">你好</button>
-                <button class="tablinks" onclick="openCity(event, 'nihaoma')">你好吗</button>
-                <button class="tablinks" onclick="openCity(event, 'dajiahao')">大家好</button>
-                <button class="tablinks" onclick="openCity(event, 'zaoshanghao')">早上好</button>
-                <button class="tablinks" onclick="openCity(event, 'xiawuhao')">下午好</button>
-                <button class="tablinks" onclick="openCity(event, 'wanshanghao')">晚上好</button>
-            </div>
-            
+        </div>
+        <div id="phrase-para-box">
+            <p class="description">In Chinese culture, people do not tend to hug or kiss each other when meeting people for the first time.
+                    Instead, people wave, nod or shake hands.  When greeting people, you can also say the following phrases.</p>
+        </div>
+        <div id="phrase-teacher-box">
+            <img id="teacher-img" src="images/teacher.png" alt="teacher">
+        </div>
+        <div class="tab" id="phrase-tab-box">
+            <button class="tablinks" onclick="openCity(event, 'nihao')">你好</button>
+            <button class="tablinks" onclick="openCity(event, 'nihaoma')">你好吗</button>
+            <button class="tablinks" onclick="openCity(event, 'dajiahao')">大家好</button>
+            <button class="tablinks" onclick="openCity(event, 'zaoshanghao')">早上好</button>
+            <button class="tablinks" onclick="openCity(event, 'xiawuhao')">下午好</button>
+            <button class="tablinks" onclick="openCity(event, 'wanshanghao')">晚上好</button>
+        </div>
+        <div id="phrase-tab-content-box"> 
             <div id="nihao" class="tabcontent">
                 <h3>你好</h3>
                 <p>pronunciation: nǐ hǎo<br>
@@ -71,6 +76,7 @@
                     meaning: Good evening</p>
             </div>
         </div>
+        
     </main>
     <footer>
         <ul id="copyright">

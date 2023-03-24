@@ -118,20 +118,52 @@ footer {
     margin-right: 100px;
     padding-top: 30px;
 }
-.content h1 {
+#phrase-main-box {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto 150px;
+}
+#phrase-title-box {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3em;
+    font-size: 2em;
     text-align: center;
+}
+#phrase-title-box h1 {
+    margin: 0px;
+}
+
+#phrase-title-box {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+#phrase-img-box {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+#phrase-para-box {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+#phrase-tab-box {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+#phrase-tab-content-box {
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+#phrase-teacher-box {
+    grid-column: 2/3;
+    grid-row: 3/6;
+    z-index: 1;
 }
 #phrase-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 70%;
 }
-/* #phrase-para {
-    width: 80%;
-    margin: auto;
-} */
 .description {
     width: 70%;
     margin: auto;
@@ -140,9 +172,7 @@ footer {
     padding: 30px;  
 }
 #teacher-img {
-    float: right;
-    height: 70px;
-    padding-left: 20px;
+    width: 100%;
   }
 /* Style the tab */
 .tab {
@@ -151,7 +181,8 @@ footer {
     background-color: #70798c;
     font-family: 'SimHei', 'STHeiti';
     width: 70%;
-    margin: auto;
+    margin: 0 auto;
+    align-self: center;
   }
   /* Style the buttons inside the tab */
   .tab button {
@@ -180,11 +211,14 @@ footer {
   /* Style the tab content */
   .tabcontent {
     display: none;
-    padding: 6px 123px;
+    padding: 6px 100px;
+    box-sizing: border-box;
+    margin: auto;
     border: 1px solid #70798c;
     border-top: none;
     font-family: 'SimHei', 'STHeiti';
     line-height: 2;
+    width: 70%;
   }
 /* * {
     border: 0.5px solid red;
