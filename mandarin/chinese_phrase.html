@@ -21,63 +21,88 @@
         </div>
     </header>
     <main class="content">
+        <h1>Useful Chinese Phrases</h1>
         <div>
-            <img id="phrase" src="images/useful_phrases.png" alt="people holding signs of Chinese phrases">
-            <p>In Chinese culture, people do not tend to hug or kiss each other when meeting people for the first time.
-                  Instead, people wave, nod or shake hands.  When greeting people, you can also say the following phrases.</p>
-            <div id="greeting-table">
-                <section>
-                    <h1>你好</h1>
-                    <p>pronunciation: nǐ hǎo<br>
-                    meaning: hello</p>
-                </section>
-                <section>
-                    <h1>你好吗？</h1>
-                    <p>pronunciation: nǐ hǎo ma<br>
-                    meaning: How are you?</p>
-                </section>
-                <section>
-                    <h1>大家好</h1>
-                    <p>pronunciation: dà jiā hǎo<br>
-                        meaning: Hi everyone</p>
-                </section>
-                <section>
-                    <h1>早上好</h1>
-                    <p>pronunciation: zǎo shàng hǎo<br>
-                    meaning: Good morning</p>
-                </section>
-                <section>
-                    <h1>下午好</h1>
-                    <p>pronunciation: xià wǔ hǎo<br>
-                    meaning: Good afternoon</p>
-                </section>
-                <section>
-                    <h1>晚上好</h1>
-                    <p>pronunciation: wǎn shàng hǎo<br>
-                        meaning: Good evening</p>
-                </section>
+            <img id="phrase-img" src="images/useful_phrases.png" alt="people holding signs of Chinese phrases">
+            <div>
+                <p class="description"><img id="teacher-img" src="images/teacher.png" alt="teacher">In Chinese culture, people do not tend to hug or kiss each other when meeting people for the first time.
+                      Instead, people wave, nod or shake hands.  When greeting people, you can also say the following phrases.</p>
             </div>
-        </div>
-        <div>
-            <img id="teacher-img" src="images/teacher.png" alt="teacher">
+            
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'nihao')">你好</button>
+                <button class="tablinks" onclick="openCity(event, 'nihaoma')">你好吗</button>
+                <button class="tablinks" onclick="openCity(event, 'dajiahao')">大家好</button>
+                <button class="tablinks" onclick="openCity(event, 'zaoshanghao')">早上好</button>
+                <button class="tablinks" onclick="openCity(event, 'xiawuhao')">下午好</button>
+                <button class="tablinks" onclick="openCity(event, 'wanshanghao')">晚上好</button>
+            </div>
+            
+            <div id="nihao" class="tabcontent">
+                <h3>你好</h3>
+                <p>pronunciation: nǐ hǎo<br>
+                    meaning: hello</p>
+            </div>
+            
+            <div id="nihaoma" class="tabcontent">
+                <h3>你好吗</h3>
+                <p>pronunciation: nǐ hǎo ma<br>
+                    meaning: How are you?</p> 
+            </div>
+            
+            <div id="dajiahao" class="tabcontent">
+                <h3>大家好</h3>
+                <p>pronunciation: dà jiā hǎo<br>
+                    meaning: Hi everyone</p>
+            </div>
+            <div id="zaoshanghao" class="tabcontent">
+                <h3>早上好</h3>
+                <p>pronunciation: zǎo shàng hǎo<br>
+                    meaning: Good morning</p>
+            </div>
+            <div id="xiawuhao" class="tabcontent">
+                <h3>下午好</h3>
+                <p>pronunciation: xià wǔ hǎo<br>
+                    meaning: Good afternoon</p>
+            </div>
+            <div id="wanshanghao" class="tabcontent">
+                <h3>晚上好</h3>
+                <p>pronunciation: wǎn shàng hǎo<br>
+                    meaning: Good evening</p>
+            </div>
         </div>
     </main>
     <footer>
-        <div id="copyright">
-            &copy; 2023 - Lisa Chuang&nbsp;&nbsp;
-            <a href="site-plan.html" target="_blank">Site Plan</a>
-        </div>
+        <ul id="copyright">
+            <li>&copy; 2023 - Lisa Chuang&nbsp;&nbsp;</li>
+            <li><a href="site-plan.html" target="_blank">Site Plan</a></li>
+        </ul>
         <div id="contact">
-            <a href="#" target="_blank">
+            <a href="https://www.facebook.com/lisa.chuang" target="_blank">
                 <img class="contact-img" src="images/facebook_logo.png" alt="facebook icon">
             </a>
-            <a href="#" target="_blank">
+            <a href="https://www.instagram.com/lisa_mandarin_chinese/" target="_blank">
                 <img class="contact-img" src="images/instagram_logo.png" alt="instagram icon">
             </a>
-            <a href="#" target="_blank">
+            <a href="mailto:lisa_chuang@mail2000.com.tw" target="_blank">
                 <img class="contact-img" src="images/email_logo.png" alt="email icon">
             </a>
         </div>
     </footer>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 </html>
