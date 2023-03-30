@@ -124,13 +124,11 @@ footer {
     display: grid;
     grid-template-columns: auto 150px;
 }
-#phrase-title-box {
+h1 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2em;
     text-align: center;
-}
-#phrase-title-box h1 {
-    margin: 0px;
+    margin: 0px
 }
 
 #phrase-title-box {
@@ -220,6 +218,39 @@ footer {
     line-height: 2;
     width: 70%;
   }
+#meet-content-box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 80%;
+    margin:0 auto;
+    box-sizing: border-box;
+}
+#meet-title {
+    grid-column: 1/3;
+}
+#meet-lisa-box {
+    grid-column: 1/3;
+}
+#meet-para {
+    grid-column: 1/2;
+}
+#meet-email-box {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lisa-pic {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 15px;
+}
+#contact-lisa {
+    border-radius: 30px;
+    width: 80%;
+    display: block;
+}
 /* * {
     border: 0.5px solid red;
 } */
